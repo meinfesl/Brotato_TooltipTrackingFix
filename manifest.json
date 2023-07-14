@@ -1,0 +1,17 @@
+{
+	"name": "TooltipTrackingFix",
+	"namespace": "meinfesl",
+	"version_number": "1.0.0",
+	"description": "Scuffed fix for missing damage/healing tracking.\nAffects Bull, all turrets, Tyler, mines. Turrets and mines show damage/dealt from ANY turrets and mines including from weapons and pocket factory.",
+	"website_url": "",
+	"dependencies": [],
+	"extra": {
+		"godot": {
+			"incompatibilities": [],
+			"authors": ["meinfesl"],
+			"compatible_mod_loader_version": ["3.0.0"],
+			"compatible_game_version": ["0.6.1.6"],
+			"config_defaults": {}
+		}
+	}
+}
