@@ -2,28 +2,6 @@ extends "res://entities/structures/turret/turret.gd"
 
 var damage_tracking_key = ""
 
-func _ready():
-	._ready()
-
-	var path = self.get_path()
-	var turret_name = path.get_name(path.get_name_count() - 1);
-	
-	if turret_name.begins_with("@"):
-		turret_name = turret_name.substr(1)
-	
-	if turret_name.begins_with("Turret"):
-		damage_tracking_key = "item_turret"
-	elif turret_name.begins_with("FlameTurret"):
-		damage_tracking_key = "item_turret_flame"
-	elif turret_name.begins_with("LaserTurret"):
-		damage_tracking_key = "item_turret_laser"
-	elif turret_name.begins_with("RocketTurret"):
-		damage_tracking_key = "item_turret_rocket"
-	elif turret_name.begins_with("Tyler"):
-		damage_tracking_key = "item_tyler"
-	elif turret_name.begins_with("HealingTurret"):
-		damage_tracking_key = "item_turret_healing"
-
 # Completely overrides base method
 func shoot()->void :
 	if _current_target.size() == 0 or not is_instance_valid(_current_target[0]):

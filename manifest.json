@@ -1,8 +1,8 @@
 {
 	"name": "TooltipTrackingFix",
 	"namespace": "meinfesl",
-	"version_number": "1.0.0",
-	"description": "Scuffed fix for missing damage/healing tracking.\nAffects Bull, all turrets, Tyler, mines. Turrets and mines show damage/dealt from ANY turrets and mines including from weapons and pocket factory.",
+	"version_number": "1.0.1",
+	"description": "Scuffed fix for missing damage/healing tracking.\nAffects Bull, all turrets, Tyler, pocket factory, mines. Turrets items and landmine aslo show damage dealt from turrets and mines spawned by wrenches/screwdrivers.",
 	"website_url": "",
 	"dependencies": [],
 	"extra": {
