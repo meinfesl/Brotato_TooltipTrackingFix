@@ -4,12 +4,16 @@ const MOD_NAME = "meinfesl-TooltipTrackingFix"
 
 const MOD_PATH = "res://mods-unpacked/meinfesl-TooltipTrackingFix/"
 
+var damage_tracking_key:String = ""
+
+
 func _init(modLoader = ModLoader):
 	ModLoaderMod.install_script_extension(MOD_PATH + "extensions/entities/structures/turret/turret.gd")
 	ModLoaderMod.install_script_extension(MOD_PATH + "extensions/entities/structures/structure.gd")
 	ModLoaderMod.install_script_extension(MOD_PATH + "extensions/entities/units/player/player.gd")
 	ModLoaderMod.install_script_extension(MOD_PATH + "extensions/entities/units/unit/unit.gd")
 	ModLoaderMod.install_script_extension(MOD_PATH + "extensions/singletons/run_data.gd")
+	ModLoaderMod.install_script_extension(MOD_PATH + "extensions/singletons/weapon_service.gd")
 	ModLoaderMod.install_script_extension(MOD_PATH + "extensions/main.gd")
 	
 	var structure_tracker = load(MOD_PATH + "structure_tracker.gd").new()
