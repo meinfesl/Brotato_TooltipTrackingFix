@@ -5,7 +5,7 @@ const MOD_NAME = "meinfesl-TooltipTrackingFix"
 const MOD_PATH = "res://mods-unpacked/meinfesl-TooltipTrackingFix/"
 
 var damage_tracking_key:String = ""
-
+var flame_turret_burning = false
 
 func _init(modLoader = ModLoader):
 	ModLoaderMod.install_script_extension(MOD_PATH + "extensions/entities/structures/turret/turret.gd")
