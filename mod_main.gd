@@ -53,6 +53,9 @@ func _ready():
 	res = load("res://items/characters/bull/bull_effect_4.tres")
 	res.tracking_text = "character_bull"
 	
+	res = load("res://items/characters/lucky/lucky_data.tres")
+	res.tracking_text = "DAMAGE_DEALT"
+	
 	res = load("res://items/all/pocket_factory/pocket_factory_data.tres")
 	res.tracking_text = "DAMAGE_DEALT"
 	

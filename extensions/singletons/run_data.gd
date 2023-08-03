@@ -12,6 +12,7 @@ func init_tracked_effects() -> Dictionary:
 		"item_tyler":0,
 		"item_pocket_factory":0,
 		"character_bull":0,
+		"character_lucky":0,
 	}
 	base.merge(ext)
 	return base
