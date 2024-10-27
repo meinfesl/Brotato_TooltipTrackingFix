@@ -19,17 +19,18 @@ func structure_spawned(structure):
 		structure_name = structure_name.substr(1)
 			
 	if structure_name.begins_with("Turret"):
-		if spawn_counter > RunData.effects["structures"].size():
-			structure.damage_tracking_key = "item_pocket_factory"
-		else:
-			structure.damage_tracking_key = "item_turret"
-	elif structure_name.begins_with("FlameTurret"):
-		structure.damage_tracking_key = "item_turret_flame"
-	elif structure_name.begins_with("LaserTurret"):
-		structure.damage_tracking_key = "item_turret_laser"
-	elif structure_name.begins_with("RocketTurret"):
-		structure.damage_tracking_key = "item_turret_rocket"
-	elif structure_name.begins_with("Tyler"):
-		structure.damage_tracking_key = "item_tyler"
-	elif structure_name.begins_with("HealingTurret"):
-		structure.damage_tracking_key = "item_turret_healing"
+		if spawn_counter > RunData.get_player_effect("structures", 0).size():
+			structure.mod_tooltiptracking_key = "item_pocket_factory"
+#		else:
+#			structure.mod_tooltiptracking_key = "item_turret"
+#	elif structure_name.begins_with("FlameTurret"):
+#		structure.mod_tooltiptracking_key = "item_turret_flame"
+#	elif structure_name.begins_with("LaserTurret"):
+#		structure.mod_tooltiptracking_key = "item_turret_laser"
+#	elif structure_name.begins_with("RocketTurret"):
+#		structure.mod_tooltiptracking_key = "item_turret_rocket"
+#	elif structure_name.begins_with("Tyler"):
+#		structure.mod_tooltiptracking_key = "item_tyler"
+#	elif structure_name.begins_with("HealingTurret"):
+#		structure.mod_tooltiptracking_key = "item_turret_healing"
+
